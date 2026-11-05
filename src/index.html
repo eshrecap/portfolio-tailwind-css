@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasey Cantik!</title>
+
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .hero-wrap {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .hero-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .hero-text,
+        .hero-img {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0 1rem;
+        }
+        
+        .hero-text {
+            align-self: center;
+        }
+        
+        .hero-img {
+            align-self: flex-end;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-row {
+                flex-wrap: nowrap;
+            }
+            .hero-text,
+            .hero-img {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Nur Rizka Sasi Kirana</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line origin-top-left"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line origin-bottom-left"></span>
+                </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                            </li>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                            </li>
+                            </li>
+                            <li class="group">
+                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Klien</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Kontak</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="hero-wrap">
+            <div class="hero-row">
+                <div class="hero-text">
+                    <h1 class="text-base font-semibold text-primary md:text-xl"><span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Nur Rizka Sasi Kirana</span></h1>
+                    <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Computer Science Student & <span class="text-dark">Frontend Developer</span></h2>
+                    <p class="font-medium text-secondary mb-10 leading-relaxed">Ngoding itu seru, bukan? <span class="text-dark font-bold">Yuk, belajar bikin web yang keren bareng saya!</span></p>
+                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-dark hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+                </div>
+                <div class="hero-img">
+                    <div style="position: relative; z-index: 0; margin: 2.5rem auto 0; max-width: 28rem;">
+                        <span style="position: absolute; inset: 0; z-index: -1; display: flex; align-items: flex-end; justify-content: center;">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; transform: scale(1.1);">
+                                <path fill="#f590d5" d="M62.1,-12.1C71.8,9.6,64.9,44.7,43.4,60.6C21.9,76.4,-14.3,72.9,-39.2,54.6C-64.2,36.3,-77.9,3.3,-69.5,-16.6C-61.1,-36.5,-30.5,-43.3,-2.2,-42.6C26.2,-41.9,52.4,-33.7,62.1,-12.1Z" transform="translate(100 100)" />
+                            </svg>
+                        </span>
+                        <img src="img/sasi.png" alt="Sasi Kirana" style="position: relative; z-index: 10; max-width: 100%; margin: 0 auto; display: block;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya 🦋</h4>
+                    <h2 class="font-bold text-dark text-4xl mb-5 max-w-md lg:text-4xl">Yuk, belajar web programming bareng saya!</h2>
+                    <p class="font-medium text-base text-secondary max-w-xl text-justify lg:text-lg">Saya mahasiswa Computer Science yang tertarik pada pengembangan frontend. Saya suka mengubah desain menjadi tampilan web yang rapi, responsif, dan nyaman digunakan. Saat ini saya terus belajar HTML, CSS, JavaScript, dan Tailwind CSS
+                        lewat proyek-proyek kecil, sambil berbagi apa yang saya pelajari di sepanjang jalan.</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-2xl lg:pt-10">Mari Berteman 🌸 </h3>
+                    <p class="font-medium text-base text-secondary mb-6 text-justify lg:text-lg">Punya pertanyaan, ide proyek, atau sekadar ingin berdiskusi seputar web development? Jangan ragu untuk menyapa. Kamu bisa menemukan saya di GitHub, LinkedIn, dan Medium. Saya akan senang sekali jika kita bisa belajar dan tumbuh bersama.</p>
+                    <div class="flex items-center">
+                        <!-- Github -->
+                        <a href="https://github.com/eshrecap" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/nur-rizka-sasi-kirana-95334b2a7?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg width="20" class="fill-current" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93.06 93.06" xml:space="preserve">
+<g>
+	<g>
+		<path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184
+			C22.362,5.091,17.351,0.08,11.185,0.08z"/>
+		<rect x="1.538" y="30.926" width="19.287" height="62.054"/>
+		<path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281
+			c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942
+			C93.06,42.235,89.455,29.383,69.925,29.383z"/>
+	</g>
+</g>
+</svg>
+                        </a>
+                        <!-- Medium -->
+                        <a href="https://medium.com/me/settings#account" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Medium</title><path d="M4.21 0A4.201 4.201 0 0 0 0 4.21v15.58A4.201 4.201 0 0 0 4.21 24h15.58A4.201 4.201 0 0 0 24 19.79v-1.093c-.137.013-.278.02-.422.02-2.577 0-4.027-2.146-4.09-4.832a7.592 7.592 0 0 1 .022-.708c.093-1.186.475-2.241 1.105-3.022a3.885 3.885 0 0 1 1.395-1.1c.468-.237 1.127-.367 1.664-.367h.023c.101 0 .202.004.303.01V4.211A4.201 4.201 0 0 0 19.79 0Zm.198 5.583h4.165l3.588 8.435 3.59-8.435h3.864v.146l-.019.004c-.705.16-1.063.397-1.063 1.254h-.003l.003 10.274c.06.676.424.885 1.063 1.03l.02.004v.145h-4.923v-.145l.019-.005c.639-.144.994-.353 1.054-1.03V7.267l-4.745 11.15h-.261L6.15 7.569v9.445c0 .857.358 1.094 1.063 1.253l.02.004v.147H4.405v-.147l.019-.004c.705-.16 1.065-.397 1.065-1.253V6.987c0-.857-.358-1.094-1.064-1.254l-.018-.004zm19.25 3.668c-1.086.023-1.733 1.323-1.813 3.124H24V9.298a1.378 1.378 0 0 0-.342-.047Zm-1.862 3.632c-.1 1.756.86 3.239 2.204 3.634v-3.634z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- About Section End -->
+    <!-- Portofolio Section Start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-bold text-lg text-primary mb-2">PORTOFOLIO 📂</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Projek Terbaru Saya</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Beberapa projek web yang saya kerjakan sambil belajar. Setiap projek membantu saya memahami cara membuat tampilan yang rapi, responsif, dan mudah digunakan.</p>
+                </div>
+            </div>
+
+            <div class="w-full max-w-5xl mx-auto px-4 flex flex-wrap justify-center">
+                <div class="mb-12 p-4 w-full md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden bg-slate-200">
+                        <img src="img/portfolio/1.png" alt="Website Pengingat Tugas Kuliah" class="w-full h-[28rem] object-contain">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center hover:text-primary">Website Pengingat Tugas Kuliah</h3>
+                    <p class="font-medium text-base text-secondary text-center">Membantu mahasiswa mencatat tugas dan tenggat waktu agar tidak ada yang terlewat, dengan tampilan sederhana yang mudah dipakai.</p>
+                </div>
+
+                <div class="mb-12 p-4 w-full md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden bg-slate-200">
+                        <img src="img/portfolio/3.png" alt="Website Lapor Perbaikan Fasilitas Kampus" class="w-full h-[28rem] object-contain">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center hover:text-primary">Website Lapor Perbaikan Fasilitas Kampus</h3>
+                    <p class="font-medium text-base text-secondary text-center">Wadah bagi mahasiswa untuk melaporkan fasilitas kampus yang rusak, lengkap dengan formulir laporan yang praktis dan jelas.</p>
+                </div>
+                <div class="mb-12 p-4 w-full md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="img/portfolio/2.png" alt="Website Perpustakaan Digital" class="w-full h-auto">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center hover:text-primary">Website Perpustakaan Digital</h3>
+                    <p class="font-medium text-base text-secondary text-center">Katalog buku online yang memudahkan pengguna mencari dan menelusuri koleksi bacaan kapan saja.</p>
+                </div>
+                <div class="mb-12 p-4 w-full md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="img/portfolio/4.png" alt="Website Donasi Bencana Online" class="w-full h-auto">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 text-center hover:text-primary">Website Donasi Bencana Online</h3>
+                    <p class="font-medium text-base text-secondary text-center">Platform penggalangan dana untuk korban bencana, dengan tampilan yang jelas dan alur donasi yang mudah diikuti.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Portofolio Section End -->
+    <!-- Clients Section Start -->
+    <section id="clients" class="pt-36 pb-32 bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-bold text-lg text-white mb-2">KLIEN 🔗</h4>
+                    <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
+                    <p class="font-medium text-md text-white md:text-lg">Terima kasih kepada semua yang sudah mempercayakan idenya kepada saya. Dari tiap kolaborasi, saya belajar menjadi developer yang lebih baik.</p>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="https://share.google/nLTeZgc1zVor0RBvX" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="img/clients/google.svg.webp" alt="Google">
+                    </a>
+                    <a href="https://share.google/1e3xvyR0MDbHmdjfa" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="img/clients/gojek.svg.webp" alt="Gojek">
+                    </a>
+                    <a href="https://share.google/U8tgglDFGYXmLA61K" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="img/clients/tokopedia.svg.webp" alt="Tokopedia">
+                    </a>
+                    <a href="https://share.google/TKjjSpaQkWgOAaKSx" class="max-w-[50px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="img/clients/shopee.svg.webp" alt="Shopee">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
+    <!-- Blog Section Start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-bold text-lg text-primary mb-2">BLOG 📕</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Ngoding sambil nulis! Di sini saya berbagi catatan singkat seputar web development dan pengalaman belajar saya, siapa tahu berguna buat kamu juga.</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="img/blog/1.webp" alt="Ensemble Methods" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="https://medium.com/@sasikirananurrizka/ensemble-methods-dalam-klasifikasi-ketika-dua-kepala-benar-benar-lebih-baik-dari-satu-2eba9bb69cdf?sharedUserId=nurrizkasasikirana5" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truntcate">Ensemble Methods dalam Klasifikasi: Ketika “Dua Kepala” Benar-Benar Lebih Baik dari Satu</a>
+                            </h3>
+                            <p class="font-medium text-secondary text-base mb-6">Satu model bagus, tapi beberapa model yang bekerja sama bisa lebih baik. Yuk, kenalan dengan ensemble methods!</p>
+                            <a href="https://medium.com/@sasikirananurrizka/ensemble-methods-dalam-klasifikasi-ketika-dua-kepala-benar-benar-lebih-baik-dari-satu-2eba9bb69cdf?sharedUserId=nurrizkasasikirana5" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="img/blog/2.webp" alt="K-Nearest Neighbor (K-NN)" class="w-full">
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="https://medium.com/@sasikirananurrizka/tutorial-klasifikasi-bunga-iris-dengan-k-nearest-neighbor-k-nn-dengan-python-4d44a7d5bbb7?sharedUserId=nurrizkasasikirana5" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truntcate">Tutorial: Klasifikasi Bunga Iris dengan K-Nearest Neighbor (K-NN) di Python</a>
+                            </h3>
+                            <p class="font-medium text-secondary text-base mb-6">Tutorial langkah demi langkah mengklasifikasikan bunga Iris dengan algoritma K-Nearest Neighbor menggunakan Python, cocok untuk pemula.</p>
+                            <a href="https://medium.com/@sasikirananurrizka/tutorial-klasifikasi-bunga-iris-dengan-k-nearest-neighbor-k-nn-dengan-python-4d44a7d5bbb7?sharedUserId=nurrizkasasikirana5" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-bold text-lg text-primary mb-2">KONTAK 📌</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Punya pertanyaan, ide projek, atau ingin berdiskusi seputar web development dan machine learning? Kirim pesan lewat formulir di bawah, saya akan senang membalasnya.</p>
+                </div>
+            </div>
+            <form>
+                <div class="w-full  lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base text-primary font-bold">Nama</label>
+                        <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="text-base text-primary font-bold">Email</label>
+                        <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="text-base text-primary font-bold">Pesan</label>
+                        <textarea type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Footer Start -->
+    <footer class="bg-slate-800 pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-4xl text-white mb-5">NSK</h2>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+                    <p>nurrizkasasikirana5@gmail.com</p>
+                    <p>Jl. Anggrek No. 30</p>
+                    <p>Jakarta</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="https://medium.com/@sasikirananurrizka/ensemble-methods-dalam-klasifikasi-ketika-dua-kepala-benar-benar-lebih-baik-dari-satu-2eba9bb69cdf?sharedUserId=nurrizkasasikirana5" class="inline-block text-base hover:text-primary mb-3">Ensemble Methods</a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@sasikirananurrizka/tutorial-klasifikasi-bunga-iris-dengan-k-nearest-neighbor-k-nn-dengan-python-4d44a7d5bbb7?sharedUserId=nurrizkasasikirana5" class="inline-block text-base hover:text-primary mb-3">K-NN</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="inline-block text-base hover:text-primary mb-3">Klien</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-primary mb-3">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-600">
+                <div class="flex items-center justify-center mb-5">
+                    <!-- Github -->
+                    <a href="https://github.com/eshrecap" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/nur-rizka-sasi-kirana-95334b2a7?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg width="20" class="fill-current" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93.06 93.06" xml:space="preserve">
+<g>
+	<g>
+		<path d="M11.185,0.08C5.004,0.08,0.001,5.092,0,11.259c0,6.173,5.003,11.184,11.186,11.184c6.166,0,11.176-5.011,11.176-11.184
+			C22.362,5.091,17.351,0.08,11.185,0.08z"/>
+		<rect x="1.538" y="30.926" width="19.287" height="62.054"/>
+		<path d="M69.925,29.383c-9.382,0-15.673,5.144-18.248,10.022h-0.258v-8.479H32.921H32.92v62.053h19.27V62.281
+			c0-8.093,1.541-15.932,11.575-15.932c9.89,0,10.022,9.256,10.022,16.451v30.178H93.06V58.942
+			C93.06,42.235,89.455,29.383,69.925,29.383z"/>
+	</g>
+</g>
+</svg>
+                    </a>
+                    <!-- Medium -->
+                    <a href="https://medium.com/me/settings#account" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Medium</title><path d="M4.21 0A4.201 4.201 0 0 0 0 4.21v15.58A4.201 4.201 0 0 0 4.21 24h15.58A4.201 4.201 0 0 0 24 19.79v-1.093c-.137.013-.278.02-.422.02-2.577 0-4.027-2.146-4.09-4.832a7.592 7.592 0 0 1 .022-.708c.093-1.186.475-2.241 1.105-3.022a3.885 3.885 0 0 1 1.395-1.1c.468-.237 1.127-.367 1.664-.367h.023c.101 0 .202.004.303.01V4.211A4.201 4.201 0 0 0 19.79 0Zm.198 5.583h4.165l3.588 8.435 3.59-8.435h3.864v.146l-.019.004c-.705.16-1.063.397-1.063 1.254h-.003l.003 10.274c.06.676.424.885 1.063 1.03l.02.004v.145h-4.923v-.145l.019-.005c.639-.144.994-.353 1.054-1.03V7.267l-4.745 11.15h-.261L6.15 7.569v9.445c0 .857.358 1.094 1.063 1.253l.02.004v.147H4.405v-.147l.019-.004c.705-.16 1.065-.397 1.065-1.253V6.987c0-.857-.358-1.094-1.064-1.254l-.018-.004zm19.25 3.668c-1.086.023-1.733 1.323-1.813 3.124H24V9.298a1.378 1.378 0 0 0-.342-.047Zm-1.862 3.632c-.1 1.756.86 3.239 2.204 3.634v-3.634z"/></svg>
+                    </a>
+                </div>
+                <p class="font-medium text-sm text-slate-400 text-center">
+                    &copy; 2026 Nur Rizka Sasi Kirana. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script>
+        // Navbar fixed
+        const header = document.querySelector('header');
+
+        window.onscroll = function() {
+            const fixedNav = header.offsetTop;
+
+            if (window.pageYOffset > fixedNav) {
+                header.classList.add('navbar-fixed');
+            } else {
+                header.classList.remove('navbar-fixed');
+            }
+        };
+
+        // Hamburger
+        const hamburger = document.querySelector('#hamburger');
+        const navMenu = document.querySelector('#nav-menu')
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('hamburger-active');
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
