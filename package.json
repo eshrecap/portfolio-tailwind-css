@@ -1,7 +1,7 @@
 {
     "scripts": {
         "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
-        "build": "mkdir -p dist && npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
+        "build": "mkdir -p dist && npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify && cp ./src/index.html ./dist/index.html && cp -R ./src/img ./dist/"
     },
     "devDependencies": {
         "@tailwindcss/cli": "^4.3.3",
